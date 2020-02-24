@@ -346,7 +346,7 @@ namespace OpenXmlPowerTools.Previous
                     {
                         RemoveBookmarks = true,
                         AcceptRevisions = false,
-                        RemoveComments = true,
+                        RemoveComments = false,
                         RemoveContentControls = true,
                         RemoveFieldCodes = true,
                         RemoveGoBackBookmark = true,
@@ -355,7 +355,7 @@ namespace OpenXmlPowerTools.Previous
                         RemoveProof = true,
                         RemoveSmartTags = true,
                         RemoveSoftHyphens = true,
-                        RemoveHyperlinks = true,
+                        RemoveHyperlinks = false,
                     };
                     MarkupSimplifier.SimplifyMarkup(wDoc, msSettings);
                     ChangeFootnoteEndnoteReferencesToUniqueRange(wDoc, startingIdForFootnotesEndnotes);
